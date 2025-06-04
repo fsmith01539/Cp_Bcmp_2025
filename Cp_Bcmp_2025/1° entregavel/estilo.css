@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#tudo{
+    background-color: #d4caca;
+}
+#menu{
+    margin: 0px 5px;
+    padding: 5px 0px;
+    background: #FF00E4;
+    color: white;
+    text-align: center;
+}
+
+div#menu ul li{
+    display: inline-flex;
+}
+
+div#menu a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 50px;
+    margin: 0px 30px;
+}
+
+div#menu a:hover{
+    background-color: white;
+    color: rgb(75, 68, 199);
+    padding: 5px 50px;
+    margin: 0px 30px;
+}
+
+#conteudo{
+    background-color: #7fd3de ;
+    margin: 0px 100px;
+    padding: 20px;
+    height: 700px;
+}
+
+#galeria{
+    display: flex;          
+    flex-wrap: wrap;         /* Permite quebra de linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 40px 90px;              /* Espaço entre as fotos */
+    padding: 20px;          /* Espaçamento interno */
+    max-width: 900px;       /* Largura máxima da galeria */
+    margin: 0 auto;         /* Centraliza na página */
+}
+
+#galeria img{
+    width: 350px;           
+    height: 230px;          
+    object-fit: cover;      /* Mantém proporção cortando excesso */
+    border-radius: 8px;     /* Borda arredondada */
+    box-shadow: 0 4px 8px black; /* Sombra sutil */
+    transition: transform 0.3s; /* Efeito de hover suave */
+}
+
+#galeria img:hover {
+  transform: scale(1.1);  /* Efeito de zoom ao passar o mouse */
+  box-shadow: 0 6px 12px black;
+}
